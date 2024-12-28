@@ -72,66 +72,67 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    title: "Ham Spam Classifier Model",
+    des: "This Ham/Spam Classifier employs a Multinomial Naive Bayes model, a highly efficient algorithm for text classification. It analyzes the frequency of words in emails to accurately categorize them as ham or spam, helping you keep your inbox clean and organized..",
+    img: "/ham_spam.jpg",
+    iconLists: ["/python.png", "/streamlit_logo.png", "/jupyter.png"],
+    link: "https://ham-spam-classifier-aditya.streamlit.app/",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
+    title: "Face Mask Detection Model",
+    des: "This face mask detection model utilizes a deep learning algorithm to identify individuals wearing masks. It can process images in real-time, providing a high level of accuracy in determining mask compliance..",
+    img: "/face_mask.png",
+    iconLists: ["/python.png", "/streamlit_logo.png", "/jupyter.png"],
+    link: "https://face-mask-detection-aditya.streamlit.app/",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
+    title:
+      "Move stats from filesystem to database. Current stats is being store in JSON. We need to move it to MySQL with SQLAlchemy",
+    des: "This tool is prominent for those who work on wikisource and earlier it was reading data from json file but this flat file system is not durable, so I have mograted stats.json to Database, and using flask initializing table automatically in our database, using this we can perform queries over the data.",
+    img: "/indicwiki.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
+    link: "https://github.com/indictechcom/indic-wsstats/pull/27",
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
+    title: "ISEA Project Phase 3",
+    des: "Contributing on Information Security Education & Awareness Project under Meity Gov.",
+    img: "/isea.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
+    link: "https://isea.gov.in/",
   },
 ];
 
 export const testimonials = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Collaborating with Aditya was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
     name: "Michael Johnson",
     title: "Director of AlphaStream Technologies",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Collaborating with Aditya was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Aditya's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
     name: "Michael Johnson",
     title: "Director of AlphaStream Technologies",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Collaborating with Aditya was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Aditya's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
     name: "Michael Johnson",
     title: "Director of AlphaStream Technologies",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Collaborating with Aditya was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Aditya's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
     name: "Michael Johnson",
     title: "Director of AlphaStream Technologies",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Collaborating with Aditya was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Aditya's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
     name: "Michael Johnson",
     title: "Director of AlphaStream Technologies",
   },
@@ -140,14 +141,14 @@ export const testimonials = [
 export const companies = [
   {
     id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
+    name: "Mediawiki",
+    img: "/MediaWiki-2020-logo.svg.png",
+    nameImg: "/mediawiki.svg",
   },
   {
     id: 2,
-    name: "appwrite",
-    img: "/app.svg",
+    name: "GDG Prayagraj",
+    img: "gdg-color-logo-only.png",
     nameImg: "/appName.svg",
   },
   {
@@ -173,31 +174,35 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Wiki Conributor",
+    desc: "Contributed on mediawiki and other wiki sister projects.",
     className: "md:col-span-2",
-    thumbnail: "/exp1.svg",
+    thumbnail: "/Wikimedia_logo.png",
+    link: "https://www.mediawiki.org/wiki/User:Adityakumar0545",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
+    title: "Google Developer Group Prayagraj Core Team",
     desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
     className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp2.svg",
+    thumbnail: "/gdg_prayagraj.png",
+    link: "https://devfest.gdgprayagraj.com/team",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
+    title: "CNCF Co-organizer",
     desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
     className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp3.svg",
+    thumbnail: "/cncf.png",
+    link: "https://www.cncf.io/",
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
+    title: "Founding Member: DCS&IT CLUB SHUATS",
     desc: "Developed and maintained user-facing features using modern frontend technologies.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSf2o8O9xlWQKvworSvhJu7HtflDASIsyPSCW0OoD5viy9U5-A/viewform",
   },
 ];
 
@@ -205,13 +210,17 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    link: "https://github.com/Aditya0545", // Replace with your GitHub profile link
   },
   {
     id: 2,
     img: "/twit.svg",
+    link: "https://x.com/aditya0545", // Replace with your Twitter profile link
   },
   {
     id: 3,
     img: "/link.svg",
+    link: "https://www.linkedin.com/in/aditya0545//", // Replace with your LinkedIn profile link
   },
 ];
+
