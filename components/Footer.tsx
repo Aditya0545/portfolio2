@@ -5,22 +5,13 @@ import MagicButton from "./MagicButton";
 
 const Footer = () => {
   return (
-    <footer className="w-full pt-20 pb-10" id="contact">
-      {/* background grid */}
-      <div className="w-full absolute left-0 -bottom-72 min-h-96">
-        <img
-          src="/footer-grid.svg"
-          alt="grid"
-          className="w-full h-full opacity-50 "
-        />
-      </div>
-
+    <footer className="w-full pt-20 pb-10 px-4 md:px-0">
       <div className="flex flex-col items-center">
-        <h1 className="heading lg:max-w-[45vw]">
+        <h1 className="heading text-2xl md:text-4xl lg:text-5xl lg:max-w-[45vw] px-4 text-center">
           Ready to take <span className="text-purple">your</span> digital
           presence to the next level?
         </h1>
-        <p className="text-white-200 md:mt-10 my-5 text-center">
+        <p className="text-white-200 md:mt-10 my-5 text-center text-sm md:text-base px-4">
           Reach out to me today and let&apos;s discuss how I can help you
           achieve your goals.
         </p>
@@ -33,10 +24,10 @@ const Footer = () => {
         </a>
       </div>
 
-      <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
-        <p className="md:text-base text-sm md:font-normal font-light"></p>
+      <div className="flex mt-16 flex-col md:flex-row justify-between items-center gap-6 md:gap-0">
+        <p className="text-xs md:text-base md:font-normal font-light"></p>
 
-        <div className="flex items-center md:gap-3 gap-6">
+        <div className="flex items-center gap-4 md:gap-6">
           {socialMedia.map((info) => (
             <a
               key={info.id}

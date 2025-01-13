@@ -29,14 +29,14 @@ const About = () => {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
-          <div className="flex flex-col lg:flex-row items-center gap-12">
+          <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-12">
             {/* Image Container */}
             <motion.div 
-              className="lg:w-1/3"
+              className="lg:w-1/3 w-full max-w-[300px]"
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
             >
-              <div className="relative h-[400px] w-[300px] overflow-hidden rounded-2xl group">
+              <div className="relative h-[300px] w-full overflow-hidden rounded-2xl group">
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
                 <Image
                   src="/aditya2.jpg"
@@ -49,18 +49,18 @@ const About = () => {
               </div>
             </motion.div>
 
-            {/* Content Container - This is where you update the text */}
+            {/* Content Container */}
             <motion.div 
-              className="lg:w-2/3"
+              className="lg:w-2/3 w-full px-4 lg:px-0"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
               <div className="space-y-4">
-                <p className="text-lg text-gray-300">
+                <p className="text-sm md:text-lg text-gray-300">
                   Passionate about technology and community building, I am currently focused on developing a vibrant community of Wikimedians. As a core team member of GDG and TFUG Prayagraj, I've contributed to multiple projects and organized impactful events like the inaugural "Keras Community Days" at SHUATS, focusing on Generative AI.
                 </p>
-                <p className="text-lg text-gray-300">
+                <p className="text-sm md:text-lg text-gray-300">
                   My technical journey spans web development and game development, having created projects using HTML, CSS, JavaScript, and Python. As a Java Developer with a Computer Science background from SHUATS, I combine my technical expertise with community leadership to drive innovation and create positive change in the tech ecosystem.
                 </p>
               </div>
