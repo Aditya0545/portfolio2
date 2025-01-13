@@ -1,7 +1,14 @@
 export const navItems = [
-  { name: "About", link: "#about" },
+  {
+    name: "Home",
+    link: "#home",
+  },
+  {
+    name: "About",
+    link: "#about",
+  },
   { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
+  { name: "Experience", link: "#experience" },
   { name: "Contact", link: "#contact" },
 ];
 
@@ -141,14 +148,14 @@ export const testimonials = [
 export const companies = [
   {
     id: 1,
-    name: "Mediawiki",
-    img: "/MediaWiki-2020-logo.svg.png",
-    nameImg: "/mediawiki.svg",
+    name: "GDG",
+    img: "/gdg-color-logo-only.png",
+    nameImg: "/gdg-name.png"
   },
   {
     id: 2,
     name: "GDG Prayagraj",
-    img: "gdg-color-logo-only.png",
+    img: "/gdg-color-logo-only.png",
     nameImg: "/appName.svg",
   },
   {
@@ -184,7 +191,7 @@ export const workExperience = [
     id: 2,
     title: "Google Developer Group Prayagraj Core Team",
     desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-    className: "md:col-span-2", // change to md:col-span-2
+    className: "md:col-span-2",
     thumbnail: "/gdg_prayagraj.png",
     link: "https://devfest.gdgprayagraj.com/team",
   },
@@ -192,7 +199,7 @@ export const workExperience = [
     id: 3,
     title: "CNCF Co-organizer",
     desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-    className: "md:col-span-2", // change to md:col-span-2
+    className: "md:col-span-2",
     thumbnail: "/cncf.png",
     link: "https://www.cncf.io/",
   },
@@ -210,17 +217,17 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
-    link: "https://github.com/Aditya0545", // Replace with your GitHub profile link
+    link: "https://github.com/Aditya0545",
   },
   {
     id: 2,
     img: "/twit.svg",
-    link: "https://x.com/aditya0545", // Replace with your Twitter profile link
+    link: "https://x.com/aditya0545",
   },
   {
     id: 3,
     img: "/link.svg",
-    link: "https://www.linkedin.com/in/aditya0545//", // Replace with your LinkedIn profile link
+    link: "https://www.linkedin.com/in/aditya0545//",
   },
 ];
 

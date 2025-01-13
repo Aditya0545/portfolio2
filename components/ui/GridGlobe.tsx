@@ -5,6 +5,7 @@ import dynamic from "next/dynamic";
 
 const World = dynamic(() => import("./Globe").then((m) => m.World), {
   ssr: false,
+  loading: () => <div>Loading...</div>
 });
 
 const GridGlobe = () => {
