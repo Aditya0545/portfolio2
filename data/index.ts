@@ -243,9 +243,14 @@ export const learningResources = {
       notes: "Complete Python tutorial covering basics to advanced concepts",
     },
     {
-      title: "Next.js 14 Tutorial",
-      link: "https://youtu.be/your-nextjs-video",
-      notes: "Learn Next.js 14 features and best practices",
+      title: "Git Tutorials For Beginners By Mosh Hamedani",
+      link: "https://youtu.be/8JJ101D3knE?si=k9oqR8_0CRK20Dpj",
+      notes: "add notes here",
+    },
+    {
+      title: "Data Structure and Algorithms By Mosh Hamedani",
+      link: "https://youtu.be/BBpAmxU_NQo?si=ps8o_wUphNgszxei",
+      notes: "add notes here",
     },
   ],
   commandReference: [
