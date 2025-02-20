@@ -238,40 +238,25 @@ export const socialMedia = [
 export const learningResources = {
   youtubeVideos: [
     {
-      title: "Next.js Crash Course",
-      link: "https://youtube.com/watch?v=example1",
-      notes: "Complete guide to Next.js 14 features",
+      title: "Python Full Course For Beginners By Mosh Hamedani",
+      link: "https://youtu.be/_uQrJ0TkZlc?si=_7YR2WlsJzJ0K9RY",
+      notes: "add notes here",
     },
-    {
-      title: "React Server Components",
-      link: "https://youtube.com/watch?v=example2",
-      notes: "Understanding RSC and client components",
-    },
+    // Add more videos here
   ],
   commandReference: [
     {
-      command: "git push origin main",
-      description: "Push commits to main branch",
+      command: "your-command",
+      description: "Command description",
     },
-    {
-      command: "npm run dev",
-      description: "Start development server",
-    },
-    {
-      command: "docker-compose up",
-      description: "Start Docker containers defined in docker-compose.yml",
-    },
+    // Add more commands here
   ],
   importantLinks: [
     {
-      title: "Next.js Documentation",
-      link: "https://nextjs.org/docs",
-      notes: "Official Next.js documentation",
+      title: "Link Title",
+      link: "https://your-link.com",
+      notes: "Link description",
     },
-    {
-      title: "React Documentation",
-      link: "https://react.dev",
-      notes: "Official React documentation",
-    },
+    // Add more links here
   ],
 };
