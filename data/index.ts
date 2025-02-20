@@ -10,6 +10,10 @@ export const navItems = [
   { name: "Projects", link: "#projects" },
   { name: "Experience", link: "#experience" },
   { name: "Contact", link: "#contact" },
+  {
+    name: "My Learning",
+    link: "#my-learning",
+  },
 ];
 
 export const gridItems = [
@@ -150,7 +154,7 @@ export const companies = [
     id: 1,
     name: "GDG",
     img: "/gdg-color-logo-only.png",
-    nameImg: "/gdg-name.png"
+    nameImg: "/gdg-name.png",
   },
   {
     id: 2,
@@ -231,3 +235,43 @@ export const socialMedia = [
   },
 ];
 
+export const learningResources = {
+  youtubeVideos: [
+    {
+      title: "Next.js Crash Course",
+      link: "https://youtube.com/watch?v=example1",
+      notes: "Complete guide to Next.js 14 features",
+    },
+    {
+      title: "React Server Components",
+      link: "https://youtube.com/watch?v=example2",
+      notes: "Understanding RSC and client components",
+    },
+  ],
+  commandReference: [
+    {
+      command: "git push origin main",
+      description: "Push commits to main branch",
+    },
+    {
+      command: "npm run dev",
+      description: "Start development server",
+    },
+    {
+      command: "docker-compose up",
+      description: "Start Docker containers defined in docker-compose.yml",
+    },
+  ],
+  importantLinks: [
+    {
+      title: "Next.js Documentation",
+      link: "https://nextjs.org/docs",
+      notes: "Official Next.js documentation",
+    },
+    {
+      title: "React Documentation",
+      link: "https://react.dev",
+      notes: "Official React documentation",
+    },
+  ],
+};
