@@ -156,7 +156,7 @@ const Hero = () => {
                   }}
                 />
                 <span className="font-medium text-base relative z-10">
-                  Show my work
+                  View Resume
                 </span>
                 <motion.span
                   animate={{ x: [0, 5, 0] }}
