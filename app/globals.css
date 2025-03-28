@@ -4,38 +4,6 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
-
-    --primary: 240 5.9% 10%;
-    --primary-foreground: 0 0% 98%;
-
-    --secondary: 240 4.8% 95.9%;
-    --secondary-foreground: 240 5.9% 10%;
-
-    --muted: 240 4.8% 95.9%;
-    --muted-foreground: 240 3.8% 46.1%;
-
-    --accent: 240 4.8% 95.9%;
-    --accent-foreground: 240 5.9% 10%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-
-    --border: 240 5.9% 90%;
-    --input: 240 5.9% 90%;
-    --ring: 240 10% 3.9%;
-
-    --radius: 0.5rem;
-  }
-
-  .dark {
     --background: 240 10% 3.9%;
     --foreground: 0 0% 98%;
 
@@ -63,6 +31,14 @@
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
     --ring: 240 4.9% 83.9%;
+
+    --radius: 0.5rem;
+
+    --background-start: #000000;
+    --background-mid: #020202;
+    --background-end: #030303;
+    --navy-blue: #040b18;
+    --dark-navy: #010408;
   }
 }
 
@@ -72,20 +48,156 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-black text-white min-h-screen overflow-x-hidden;
+    background: 
+      radial-gradient(
+        circle at top center,
+        var(--background-end) 0%,
+        var(--background-mid) 20%,
+        var(--background-start) 30%
+      ),
+      linear-gradient(
+        180deg,
+        var(--background-start) 0%,
+        var(--background-mid) 100%
+      );
+    min-height: 100vh;
+    color: #fff;
+  }
+
+  /* Add a very subtle noise texture */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise' x='0' y='0'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.015'/%3E%3C/svg%3E");
+    mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 0.15), transparent 70%);
+    pointer-events: none;
+    z-index: 1;
   }
 
   button {
     @apply active:outline-none;
   }
-}
 
-@layer utilities {
-  .heading {
-    @apply font-bold text-4xl md:text-5xl text-center;
+  /* Default section spacing */
+  section {
+    @apply py-24 md:py-32;
+  }
+
+  /* Default heading styles */
+  h1, h2, h3, h4, h5, h6 {
+    @apply tracking-tight;
+  }
+
+  /* Improved paragraph readability */
+  p {
+    @apply leading-relaxed text-white/80;
+  }
+
+  /* Better link styling */
+  a {
+    @apply transition-colors duration-200;
+  }
+
+  /* Smooth scrolling for the whole page */
+  html {
+    @apply scroll-smooth;
+  }
+
+  /* Custom scrollbar - darker version */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #000000;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #0f0f0f;
+    border-radius: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #1a1a1a;
+  }
+
+  /* For Firefox - darker version */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #0f0f0f #000000;
+  }
+
+  /* Selection color */
+  ::selection {
+    @apply bg-purple-500/30 text-white;
+  }
+
+  body {
+    @apply selection:bg-white/10 selection:text-white;
   }
 }
 
-html {
-  scroll-behavior: smooth;
+@layer components {
+  .heading {
+    @apply text-4xl sm:text-5xl font-bold tracking-tight;
+  }
+
+  .heading-gradient {
+    @apply bg-gradient-to-b from-white to-white/60 bg-clip-text text-transparent;
+  }
+
+  .perspective-1500 {
+    perspective: 1500px;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-400;
+  }
+
+  .bg-grid-small-white {
+    background-size: 30px 30px;
+    background-image: 
+      linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  }
+
+  /* Glass effect */
+  .glass {
+    @apply bg-white/5 backdrop-blur-lg border border-white/10 shadow-xl;
+  }
+
+  /* Card styling */
+  .card {
+    @apply bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden shadow-lg shadow-black/20 hover:shadow-xl hover:shadow-purple-900/10 transition-shadow;
+  }
+
+  /* Button styling */
+  .btn {
+    @apply px-6 py-3 rounded-full flex items-center justify-center gap-2 font-medium transition-all duration-200;
+  }
+
+  .btn-primary {
+    @apply bg-gradient-to-r from-purple-600 to-blue-600 text-white 
+           hover:from-purple-500 hover:to-blue-500
+           shadow-[0_0_15px_rgba(168,85,247,0.3)] hover:shadow-[0_0_20px_rgba(168,85,247,0.5)];
+  }
+
+  /* Container sizing */
+  .container-narrow {
+    @apply max-w-5xl mx-auto px-4;
+  }
+
+  /* Flex layouts */
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+
+  .flex-between {
+    @apply flex items-center justify-between;
+  }
 }

@@ -9,11 +9,8 @@ export const navItems = [
   },
   { name: "Projects", link: "#projects" },
   { name: "Experience", link: "#experience" },
+  { name: "Blogs", link: "#blogs" },
   { name: "Contact", link: "#contact" },
-  {
-    name: "My Learning",
-    link: "#my-learning",
-  },
 ];
 
 export const gridItems = [
@@ -116,71 +113,8 @@ export const projects = [
   },
 ];
 
-export const testimonials = [
-  {
-    quote:
-      "Collaborating with Aditya was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Aditya was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Aditya's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Aditya was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Aditya's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Aditya was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Aditya's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Aditya was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Aditya's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-];
-
-export const companies = [
-  {
-    id: 1,
-    name: "GDG",
-    img: "/gdg-color-logo-only.png",
-    nameImg: "/gdg-name.png",
-  },
-  {
-    id: 2,
-    name: "GDG Prayagraj",
-    img: "/gdg-color-logo-only.png",
-    nameImg: "/appName.svg",
-  },
-  {
-    id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
-  },
-  {
-    id: 4,
-    name: "stream",
-    img: "/s.svg",
-    nameImg: "/streamName.svg",
-  },
-  {
-    id: 5,
-    name: "docker.",
-    img: "/dock.svg",
-    nameImg: "/dockerName.svg",
-  },
-];
+export const companies = undefined;
+export const testimonials = undefined;
 
 export const workExperience = [
   {
@@ -280,3 +214,23 @@ export const learningResources = {
     },
   ],
 };
+
+export const blogPosts = [
+  {
+    id: 1,
+    title: "My Journey: Road to Wiki | WikiClub Tech India",
+    description:
+      "Exploring my journey into the world of Wikimedia and my experience with WikiClub Tech India. A personal narrative about contributing to open knowledge and community building.",
+    url: "https://medium.com/@adityakumar2019.ak/my-journey-road-to-wiki-wikiclub-tech-india-2d1a19dab521",
+    gradient: "from-purple-600 to-blue-600",
+  },
+  {
+    id: 2,
+    title:
+      "My First Devfest: A Volunteer's Experience at Devfest 2023 Prayagraj",
+    description:
+      "A detailed account of my experience volunteering at Devfest 2023 Prayagraj, sharing insights and learnings from this significant tech community event.",
+    url: "https://medium.com/@adityakumar2019.ak/my-first-devfest-a-volunteers-experience-at-devfest-2023-prayagraj-232035102743",
+    gradient: "from-purple-600 to-pink-600",
+  },
+];
