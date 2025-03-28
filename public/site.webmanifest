@@ -1,0 +1,14 @@
+{
+  "name": "Aditya Kumar Portfolio",
+  "short_name": "AK Portfolio",
+  "icons": [
+    {
+      "src": "/ak-icon.svg",
+      "sizes": "32x32",
+      "type": "image/svg+xml"
+    }
+  ],
+  "theme_color": "#070B14",
+  "background_color": "#070B14",
+  "display": "standalone"
+} 
