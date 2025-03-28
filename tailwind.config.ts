@@ -39,9 +39,13 @@ const config = {
           200: "#C1C2D3",
         },
         blue: {
-          "100": "#E4ECFF",
+          ...colors.blue,
+          100: "#E4ECFF",
         },
-        purple: "#CBACF9",
+        purple: {
+          ...colors.purple,
+          DEFAULT: "#CBACF9",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -159,6 +163,8 @@ const config = {
         fifth: "moveInCircle 20s ease infinite",
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+        "spin-slow": "spin 3s linear infinite",
+        "spin-slower": "spin 4s linear infinite",
       },
     },
   },
